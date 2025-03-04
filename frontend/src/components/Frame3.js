@@ -149,15 +149,15 @@ function Frame3() {
         id="box5"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 5")}
+        onClick={() => handleSportClick("basketball_ncaab")}
       ></div>
       <div
         id="text5"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 5")}
+        onClick={() => handleSportClick("basketball_ncaab")}
       >
-        Sport 5
+        NCABB
       </div>
 
       {/* Row 2 */}
