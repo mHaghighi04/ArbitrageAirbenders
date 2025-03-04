@@ -13,15 +13,26 @@ const sports = [
 
 function Frame3() {
   const navigate = useNavigate();
+  const handleSportClick = async (sportName) => {
+    try {
+      const response = await fetch("http://127.0.0.1:5000/api/check_arbitrage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sport: sportName }),
+      });
+      const data = await response.json();
+      console.log(`Backend response for ${sportName}:`, data);
 
-  const handleFailClick = () => {
-    navigate("/frame5");
+      if (data.arbitrageFound) {
+        navigate("/frame4");
+      } else {
+        navigate("/frame5");
+      }
+    } catch (error) {
+      console.error("Error calling backend:", error);
+      navigate("/frame5");
+    }
   };
-
-  const handleNBAClick = () => {
-    navigate("/frame4");
-  };
-
 
   return (
     <div className="frame3" style={{marginTop: "-60px"}}>
@@ -36,51 +47,113 @@ function Frame3() {
       <div id="boxnba" className="box"></div>
       <div id="textnba" className="text">NBA</div> */}
 
-      <div
+       {/* Example "Fail" option */}
+       <div
         id="boxf"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={handleFailClick}
+        onClick={() => handleSportClick("Fail")}
       ></div>
       <div
         id="textf"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={handleFailClick}
+        onClick={() => handleSportClick("Fail")}
       >
         Fail
       </div>
 
-      {/* NBA option: when clicked, navigates to Frame4 */}
+      {/* Example "NBA" option */}
       <div
         id="boxnba"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={handleNBAClick}
+        onClick={() => handleSportClick("NBA")}
       ></div>
       <div
         id="textnba"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={handleNBAClick}
+        onClick={() => handleSportClick("NBA")}
       >
         NBA
       </div>
 
-      <div id="box1" className="box"></div>
-      <div id="text1" className="text">UFC</div>
+      {/* Additional sport boxes with example labels */}
+      <div
+        id="box1"
+        className="box"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("UFC")}
+      ></div>
+      <div
+        id="text1"
+        className="text"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("UFC")}
+      >
+        UFC
+      </div>
 
-      <div id="box2" className="box"></div>
-      <div id="text2" className="text">NFL</div>
+      <div
+        id="box2"
+        className="box"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("NFL")}
+      ></div>
+      <div
+        id="text2"
+        className="text"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("NFL")}
+      >
+        NFL
+      </div>
 
-      <div id="box3" className="box"></div>
-      <div id="text3" className="text">Sport 3</div>
+      <div
+        id="box3"
+        className="box"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 3")}
+      ></div>
+      <div
+        id="text3"
+        className="text"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 3")}
+      >
+        Sport 3
+      </div>
 
-      <div id="box4" className="box"></div>
-      <div id="text4" className="text">Sport 4</div>
+      <div
+        id="box4"
+        className="box"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 4")}
+      ></div>
+      <div
+        id="text4"
+        className="text"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 4")}
+      >
+        Sport 4
+      </div>
 
-      <div id="box5" className="box"></div>
-      <div id="text5" className="text">Sport 5</div>
+      <div
+        id="box5"
+        className="box"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 5")}
+      ></div>
+      <div
+        id="text5"
+        className="text"
+        style={{ cursor: "pointer" }}
+        onClick={() => handleSportClick("Sport 5")}
+      >
+        Sport 5
+      </div>
 
       {/* Row 2 */}
       <div id="box6" className="box"></div>

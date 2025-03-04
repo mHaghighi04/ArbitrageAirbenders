@@ -1,9 +1,13 @@
 import threading
 import time
 import requests
-from flask import Flask, jsonify, render_template_string
+from flask import Flask, request, jsonify, render_template_string
+from flask_cors import CORS
+
+
 
 app = Flask(__name__)
+CORS(app)
 
 # =======================
 # Global Config & Variables
@@ -253,11 +257,23 @@ def opportunities():
     """
     return jsonify(latest_arbitrage_opportunity)
 
+@app.route("/api/check_arbitrage", methods=["POST"])
+def check_arbitrage_endpoint():
+    data = request.get_json()
+    sport = data.get("sport")
+    # Simulate logic: if sport is "NBA", arbitrage is found; otherwise, not.
+    if sport == "NBA":
+        return jsonify({"arbitrageFound": True})
+    else:
+        return jsonify({"arbitrageFound": False})
+
+
 # =======================
 # Main Entry
 # =======================
 if __name__ == "__main__":
-    # Start the background thread to update odds data.
+    # Start the background thread to update odds data.if __name__ == "__main__":
+    import threading
     updater = threading.Thread(target=update_odds_data, daemon=True)
     updater.start()
     # Run the Flask app.
