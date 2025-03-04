@@ -273,113 +273,97 @@ background: #1B1B1B;
 
 /* Rectangle 4 */
 .rectangle4{
-box-sizing: border-box;
-
-position: absolute;
-width: 154px;
-height: 68px;
-left: 882px;
-top: 548px;
-
-background: #FFD43B;
-border: 1px solid #000000;
-border-radius: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 154px;
+  height: 68px;
+  left: 900px;  /* was 882px */
+  top: 548px;
+  background: #FFD43B;
+  border: 1px solid #000000;
+  border-radius: 15px;
 }
-
 
 /* Next */
 .buttonNext{
-position: absolute;
-width: 153px;
-height: 44px;
-left: 883px;
-top: 567px;
-z-index: 1000;
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-text-align: center;
-
-color: #000000;
-text-decoration: none;
+  position: absolute;
+  width: 153px;
+  height: 44px;
+  left: 901px;  /* was 883px */
+  top: 567px;
+  z-index: 1000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* Rectangle 3 */
 .rectangle3{
-box-sizing: border-box;
-
-position: absolute;
-width: 632px;
-height: 61px;
-left: 404px;
-top: 464px;
-
-border: 2px solid #FFFFFF;
-border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 632px;
+  height: 61px;
+  left: 422px;  /* was 404px */
+  top: 464px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 /* Rectangle 5 */
 .rectangle5{
-box-sizing: border-box;
-
-position: absolute;
-width: 855px;
-height: 673px;
-left: 292px;
-top: 182px;
-z-index: 100;
-
-border: 2px solid #FFFFFF;
-border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 855px;
+  height: 673px;
+  left: 310px;  /* was 292px */
+  top: 182px;
+  z-index: 100;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 /* What is your bankroll? */
 .bankrollQuestion{
-position: absolute;
-width: 770px;
-height: 70px;
-left: 335px;
-top: 382px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-text-align: center;
-
-color: #FFFFFF;
+  position: absolute;
+  width: 770px;
+  height: 70px;
+  left: 353px;  /* was 335px */
+  top: 382px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  color: #FFFFFF;
 }
-
 
 /* $1000 */
 .inputBankroll {
-position: absolute;
-width: 600px;
-height: 44px;
-left: 435px;
-top: 475px;
-z-index: 1000;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
-
-background: transparent;  
-border: none;     
-color: #FFFFFF;
-
+  position: absolute;
+  width: 600px;
+  height: 44px;
+  left: 453px;  /* was 435px */
+  top: 475px;
+  z-index: 1000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  background: transparent;  
+  border: none;     
+  color: #FFFFFF;
 }
 
 .dollarsign {
   position: absolute;
-  left: 415px;
+  left: 433px;  /* was 415px */
   top: 475px;
   font-family: 'Inter';
   font-style: normal;
@@ -401,136 +385,136 @@ color: #FFFFFF;
 
 /* Rectangle 6 */
 .rectangle6{
-box-sizing: border-box;
+  box-sizing: border-box;
 
-position: absolute;
-width: 150px;
-height: 150px;
-left: 129px;
-top: 329px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 147px; /* was 129px */
+  top: 329px;
 
-border: 2px solid #FFFFFF;
-border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 /* Pick a sport: */
 .pickSportText{
-position: absolute;
-width: 770px;
-height: 70px;
-left: 335px;
-top: 199px;
+  position: absolute;
+  width: 770px;
+  height: 70px;
+  left: 353px; /* was 335px */
+  top: 199px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 /* General Styles */
 .box {
-    box-sizing: border-box;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 2px solid #FFFFFF;
-    border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 .text {
-    position: absolute;
-    width: 94px;
-    height: 52px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #FFFFFF;
+  position: absolute;
+  width: 94px;
+  height: 52px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;  
+  color: #FFFFFF;
 }
 
 /* Row 1 */
+#boxf { left: 147px; top: 329px; } /* was 129px */
+#textf { left: 175px; top: 378px; } /* was 157px */
 
-#boxf { left: 129px; top: 329px; }
-#textf { left: 157px; top: 378px; }
+#boxnba { left: 319px; top: 329px; } /* was 301px */
+#textnba { left: 347px; top: 378px; } /* was 329px */
 
-#boxnba { left: 301px; top: 329px; }
-#textnba { left: 329px; top: 378px; }
+#box1 { left: 491px; top: 329px; } /* was 473px */
+#text1 { left: 519px; top: 378px; } /* was 501px */
 
-#box1 { left: 473px; top: 329px; }
-#text1 { left: 501px; top: 378px; }
+#box2 { left: 663px; top: 329px; } /* was 645px */
+#text2 { left: 691px; top: 378px; } /* was 673px */
 
-#box2 { left: 645px; top: 329px; }
-#text2 { left: 673px; top: 378px; }
+#box3 { left: 835px; top: 329px; } /* was 817px */
+#text3 { left: 863px; top: 378px; } /* was 845px */
 
-#box3 { left: 817px; top: 329px; }
-#text3 { left: 845px; top: 378px; }
+#box4 { left: 1007px; top: 329px; } /* was 989px */
+#text4 { left: 1035px; top: 378px; } /* was 1017px */
 
-#box4 { left: 989px; top: 329px; }
-#text4 { left: 1017px; top: 378px; }
-
-#box5 { left: 1161px; top: 329px; }
-#text5 { left: 1189px; top: 378px; }
+#box5 { left: 1179px; top: 329px; } /* was 1161px */
+#text5 { left: 1185px; top: 378px; } /* was 1167px */
 
 /* Row 2 */
-#box6 { left: 129px; top: 502px; }
-#text6 { left: 157px; top: 551px; }
+#box6 { left: 147px; top: 502px; } /* was 129px */
+#text6 { left: 175px; top: 551px; } /* was 157px */
 
-#box7 { left: 301px; top: 502px; }
-#text7 { left: 329px; top: 551px; }
+#box7 { left: 319px; top: 502px; } /* was 301px */
+#text7 { left: 347px; top: 551px; } /* was 329px */
 
-#box8 { left: 473px; top: 502px; }
-#text8 { left: 501px; top: 551px; }
+#box8 { left: 491px; top: 502px; } /* was 473px */
+#text8 { left: 519px; top: 551px; } /* was 501px */
 
-#box9 { left: 645px; top: 502px; }
-#text9 { left: 673px; top: 551px; }
+#box9 { left: 663px; top: 502px; } /* was 645px */
+#text9 { left: 691px; top: 551px; } /* was 673px */
 
-#box10 { left: 817px; top: 502px; }
-#text10 { left: 845px; top: 551px; }
+#box10 { left: 835px; top: 502px; } /* was 817px */
+#text10 { left: 863px; top: 551px; } /* was 845px */
 
-#box11 { left: 989px; top: 502px; }
-#text11 { left: 1017px; top: 551px; }
+#box11 { left: 1007px; top: 502px; } /* was 989px */
+#text11 { left: 1035px; top: 551px; } /* was 1017px */
 
-#box12 { left: 1161px; top: 502px; }
-#text12 { left: 1189px; top: 551px; }
+#box12 { left: 1179px; top: 502px; } /* was 1161px */
+#text12 { left: 1207px; top: 551px; } /* was 1189px */
 
 /* Row 3 */
-#box13 { left: 129px; top: 675px; }
-#text13 { left: 157px; top: 724px; }
+#box13 { left: 147px; top: 675px; } /* was 129px */
+#text13 { left: 175px; top: 724px; } /* was 157px */
 
-#box14 { left: 301px; top: 675px; }
-#text14 { left: 329px; top: 724px; }
+#box14 { left: 319px; top: 675px; } /* was 301px */
+#text14 { left: 347px; top: 724px; } /* was 329px */
 
-#box15 { left: 473px; top: 675px; }
-#text15 { left: 501px; top: 724px; }
+#box15 { left: 491px; top: 675px; } /* was 473px */
+#text15 { left: 519px; top: 724px; } /* was 501px */
 
-#box16 { left: 645px; top: 675px; }
-#text16 { left: 673px; top: 724px; }
+#box16 { left: 663px; top: 675px; } /* was 645px */
+#text16 { left: 691px; top: 724px; } /* was 673px */
 
-#box17 { left: 817px; top: 675px; }
-#text17 { left: 845px; top: 724px; }
+#box17 { left: 835px; top: 675px; } /* was 817px */
+#text17 { left: 863px; top: 724px; } /* was 845px */
 
-#box18 { left: 989px; top: 675px; }
-#text18 { left: 1017px; top: 724px; }
+#box18 { left: 1007px; top: 675px; } /* was 989px */
+#text18 { left: 1035px; top: 724px; } /* was 1017px */
 
-#box19 { left: 1161px; top: 675px; }
-#text19 { left: 1189px; top: 724px; }
-
+#box19 { left: 1179px; top: 675px; } /* was 1161px */
+#text19 { left: 1207px; top: 724px; } /* was 1189px */
 
 /* Line 2 */
 .line2{
-position: absolute;
-width: 618px;
-height: 0px;
-left: 411px;
-top: 270px;
+  position: absolute;
+  width: 618px;
+  height: 0px;
+  left: 429px; /* was 411px */
+  top: 270px;
 
-border: 1px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 
@@ -543,103 +527,129 @@ border: 1px solid #FFFFFF;
   background: #1B1B1B;
 }
 
-
 /* Arbitrage Opportunity Found: */
 .textArbitrageFound{
-position: absolute;
-width: 770px;
-height: 70px;
-left: 335px;
-top: 195px;
+  position: absolute;
+  width: 770px;
+  height: 70px;
+  left: 353px; /* was 335px */
+  top: 195px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
-
 .container {
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 5px;
 }
 
 .text {
-    position: absolute;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    color: #FFFFFF;
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
 }
+
 /* Website Section */
 .website-box {
-    width: 518px;
-    height: 265px;
-    border: 2px solid #FFFFFF;
+  width: 518px;
+  height: 265px;
+  border: 2px solid #FFFFFF;
 }
 
 .website-title {
-    width: 458px;
-    height: 80px;
-    font-size: 50px;
-    line-height: 61px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    color: #FFFFFF;
+  width: 515px;
+  height: 80px;
+  font-size: 50px;
+  line-height: 61px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Bet Section */
 .bet-text {
-    width: 575px;
-    height: 65px;
-    font-size: 40px;
-    line-height: 48px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    color: #FFFFFF;
+  width: 515px;
+  height: 65px;
+  font-size: 30px;
+  line-height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* Guaranteed Returns Box */
 #guaranteed-box {
-    width: 688px;
-    height: 265px;
-    left: 376px;
-    top: 618px;
-    border: 2px solid #FFD43B;
+  width: 688px;
+  height: 265px;
+  left: 394px; /* was 376px */
+  top: 618px;
+  border: 2px solid #FFD43B;
 }
 
 /* First Website */
-#website1-box { position: absolute; left: 100px; top: 309px; }
-#website1-title { position: absolute; left: 20x; top: 50px; }
-#bet1 { position: absolute; left: -30px; top: 150px; }
+#website1-box { 
+  position: absolute; 
+  left: 151px; /* was 146px, now +5px */
+  top: 309px; 
+}
+#website1-title { 
+  position: absolute; 
+  left: 0px; /* was 66px, now +5px */
+  top: 45px; 
+}
+#bet1 { 
+  position: absolute; 
+  left: 0px; /* was 16px, now +5px */
+  top: 140px; 
+}
 
 /* Second Website */
-#website2-box { position: absolute; left: 740px; top: 309px; }
-#website2-title { position: absolute; left: 20px; top: 50px; }
-#bet2 { position: absolute; left: -30px; top: 150px; }
+#website2-box { 
+  position: absolute; 
+  left: 791px; /* was 786px, now +5px */
+  top: 309px; 
+}
+#website2-title { 
+  position: absolute; 
+  left: 0px; /* was 66px, now +5px */
+  top: 45px; 
+}
+#bet2 { 
+  position: absolute; 
+  left: 0px; /* was 16px, now +5px */
+  top: 140px; 
+}
 
 /* Guaranteed Returns Section */
 #guaranteed-title { 
-    width: 539px; 
-    height: 79px; 
-    left: 65px; 
-    top: 55px; 
-    font-size: 50px; 
-    line-height: 61px;
+  width: 539px; 
+  height: 79px; 
+  left: 65px; /* was 65px */
+  top: 55px; 
+  font-size: 50px; 
+  line-height: 61px;
 }
 
-#margins-text { left: 85px; top: 145px; width: 500px;}
-
+#margins-text { 
+  left: 85px; /* was 85px */
+  top: 145px; 
+  width: 500px;
+}
 
 /* Frame 5 */
 .frame5{
@@ -650,69 +660,64 @@ color: #FFFFFF;
   background: #1B1B1B;
 }
 
-
-
-
 /* More Sports */
 .textMoreSports{
-position: absolute;
-width: 195px;
-height: 46px;
-left: 623px;
-top: 585px;
-z-index: 1000;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-text-decoration: none;
-}
-
-/* Rectangle More */
-.rectangleMore {
-  box-sizing: border-box;
   position: absolute;
-  width: 212px;             /* 192px * 0.8 = 153.6px → 154px */
-  height: 65px;             /* 67px * 0.8 = 53.6px → 54px */
-  left: 615px;              /* 1201px * 0.8 = 960.8px → 961px */
-  top: 572px;                /* 30px * 0.8 = 24px */
-  background: #FFD43B;
-  border: 1px solid #000000;
-  border-radius: 12px;      /* 15px * 0.8 = 12px */
-}
-
-
-
-/* No Arbitration Opportunites Found :( */
-.textArbitrageNotFound{
-position: absolute;
-width: 770px;
-height: 70px;
-left: 335px;
-top: 310px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-text-align: center;
-
-color: #FFFFFF;
-}
-
-.linef5{
-  position: absolute;
-  width: 780px;
-  height: 0px;
-  left: 325px;
-  top: 445px;
+  width: 195px;
+  height: 46px;
+  left: 641px;
+  top: 585px;
+  z-index: 1000;
   
-  border: 1px solid #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+  text-decoration: none;
+  }
+  
+  /* Rectangle More */
+  .rectangleMore {
+    box-sizing: border-box;
+    position: absolute;
+    width: 212px;             /* 192px * 0.8 = 153.6px → 154px */
+    height: 65px;             /* 67px * 0.8 = 53.6px → 54px */
+    left: 633px;
+    top: 572px;                /* 30px * 0.8 = 24px */
+    background: #FFD43B;
+    border: 1px solid #000000;
+    border-radius: 12px;      /* 15px * 0.8 = 12px */
+  }
+  
+  /* No Arbitration Opportunites Found :( */
+  .textArbitrageNotFound{
+  position: absolute;
+  width: 770px;
+  height: 70px;
+  left: 353px;
+  top: 310px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+  
+  .linef5{
+    position: absolute;
+    width: 780px;
+    height: 0px;
+    left: 343px;
+    top: 445px;
+    
+    border: 1px solid #FFFFFF;
   }
   
