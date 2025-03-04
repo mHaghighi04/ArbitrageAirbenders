@@ -162,6 +162,23 @@ background-size: contain;
   
 }
 
+.buttonExploreSports {
+  position: absolute;
+  width: 122px;             /* 153px * 0.8 = 122.4px → 122px */
+  height: 35px;             /* 44px * 0.8 = 35.2px → 35px */
+  right: 65px;              /* 1228px * 0.8 = 982.4px → 982px */
+  top: 39px;                /* 49px * 0.8 = 39.2px → 39px */
+  z-index: 1000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;          /* 25px * 0.8 = 20px */
+  line-height: 24px;        /* 30px * 0.8 = 24px */
+  color: #000000;
+  text-decoration: none;
+  
+}
+
 /* Line 1 */
 .line1 {
   position: absolute;
