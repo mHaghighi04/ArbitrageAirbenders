@@ -14,6 +14,7 @@ const sports = [
 function Frame3() {
   const navigate = useNavigate();
   const handleSportClick = async (sportName) => {
+    console.log("Sending sport to backend:", sportName);
     try {
       const response = await fetch("http://127.0.0.1:5000/api/check_arbitrage", {
         method: "POST",
@@ -68,16 +69,17 @@ function Frame3() {
         id="boxnba"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("NBA")}
+        onClick={() => handleSportClick("basketball_nba")}
       ></div>
       <div
         id="textnba"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("NBA")}
+        onClick={() => handleSportClick("basketball_nba")}
       >
         NBA
       </div>
+
 
       {/* Additional sport boxes with example labels */}
       <div
