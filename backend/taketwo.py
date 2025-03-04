@@ -212,7 +212,8 @@ def get_opportunity():
         return jsonify({"error": "Please provide a sport key in the JSON body."}), 400
 
     sport = data["sport"]
-    opportunity = find_highest_arbitrage(sport)
+    amount = data["amount"]
+    opportunity = find_highest_arbitrage(sport, amount)
     print (opportunity)
     return jsonify(opportunity)
 

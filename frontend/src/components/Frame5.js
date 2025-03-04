@@ -9,7 +9,7 @@ function Frame5() {
       <div className="textArbitrageNotFound">
         No Arbitration Opportunities Found :(
       </div>
-      <Link className="textMoreSports" to="/frame3">
+      <Link className="textMoreSports" to="/frame2">
         More Sports
       </Link>
       <div className="rectangleMore"></div>

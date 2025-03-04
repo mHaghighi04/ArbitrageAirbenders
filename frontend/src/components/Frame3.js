@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const sports = [
   { id: "box1", name: "Football" },
@@ -12,6 +13,8 @@ const sports = [
 ];
 
 function Frame3() {
+  const location = useLocation();
+  const { bankroll } = location.state || {};
   const navigate = useNavigate();
   const handleSportClick = async (sportName) => {
     console.log("Sending sport to backend:", sportName);
@@ -19,13 +22,13 @@ function Frame3() {
       const response = await fetch("http://127.0.0.1:5000/api/check_arbitrage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sport: sportName }),
+        body: JSON.stringify({ sport: sportName , amount : bankroll}),
       });
       const data = await response.json();
       console.log(`Backend response for ${sportName}:`, data);
 
-      if (data.arbitrageFound) {
-        navigate("/frame4");
+      if (data && Object.keys(data).length > 0) {
+        navigate("/frame4", { state: { opportunity: data } });
       } else {
         navigate("/frame5");
       }
@@ -86,28 +89,28 @@ function Frame3() {
         id="box1"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("UFC")}
+        onClick={() => handleSportClick("mma_mixed_martial_arts")}
       ></div>
       <div
         id="text1"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("UFC")}
+        onClick={() => handleSportClick("mma_mixed_martial_arts")}
       >
-        UFC
+        MMA
       </div>
 
       <div
         id="box2"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("NFL")}
+        onClick={() => handleSportClick("americanfootball_nfl")}
       ></div>
       <div
         id="text2"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("NFL")}
+        onClick={() => handleSportClick("americanfootball_nfl")}
       >
         NFL
       </div>
@@ -116,30 +119,30 @@ function Frame3() {
         id="box3"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 3")}
+        onClick={() => handleSportClick("baseball_mlb")}
       ></div>
       <div
         id="text3"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 3")}
+        onClick={() => handleSportClick("baseball_mlb")}
       >
-        Sport 3
+        MLB
       </div>
 
       <div
         id="box4"
         className="box"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 4")}
+        onClick={() => handleSportClick("icehockey_nhl")}
       ></div>
       <div
         id="text4"
         className="text"
         style={{ cursor: "pointer" }}
-        onClick={() => handleSportClick("Sport 4")}
+        onClick={() => handleSportClick("icehockey_nhl")}
       >
-        Sport 4
+        NHL
       </div>
 
       <div
