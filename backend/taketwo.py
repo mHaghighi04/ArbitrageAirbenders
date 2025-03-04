@@ -202,6 +202,10 @@ def get_opportunity():
     Returns the highest arbitrage opportunity for that sport as JSON.
     """
     print("check_arbitrage_endpoint was called")
+
+    if request.method == "OPTIONS":
+        return jsonify({}), 200
+    
     data = request.get_json()
     print("Received sport:", data.get("sport"))
     if not data or "sport" not in data:
@@ -209,6 +213,7 @@ def get_opportunity():
 
     sport = data["sport"]
     opportunity = find_highest_arbitrage(sport)
+    print (opportunity)
     return jsonify(opportunity)
 
 # =======================
