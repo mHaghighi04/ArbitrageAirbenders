@@ -731,10 +731,12 @@ background: #1B1B1B;
   padding: 200px 20px; /* extra top padding so the navbar doesn't overlap */
   box-sizing: border-box;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
 }
 
 .aboutTitle {
+  font-family: 'Inter';
+  font-style: normal;
   text-align: center;
   font-size: 50px;
   line-height: 61px;
@@ -743,6 +745,7 @@ background: #1B1B1B;
 }
 
 .aboutText {
+  font-family: 'Inter';
   max-width: 800px;
   margin: 0 auto 20px;
   font-size: 20px;
