@@ -721,3 +721,41 @@ background: #1B1B1B;
     border: 1px solid #FFFFFF;
   }
   
+
+  /* About Page Styles */
+.frameAbout {
+  position: relative;
+  width: 100vw;
+  min-height: 120vh;
+  background: #1B1B1B;
+  padding: 200px 20px; /* extra top padding so the navbar doesn't overlap */
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-size: 50px;
+  line-height: 61px;
+  color: #FFD43B;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.lineAbout{
+  position: absolute;
+  width: 700px;
+  height: 0px;
+  left: 390px;
+  top: 260px;
+  
+  border: 1px solid #FFFFFF;
+}
