@@ -1,15 +1,23 @@
-// src/components/Frame2.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Frame2 = () => {
-  const [bankroll, setBankroll] = useState(1000);
+  // Initialize bankroll as a string to allow empty input
+  const [bankroll, setBankroll] = useState("1000");
+
+  // Validate that the input is empty or contains only digits
+  const handleChange = (e) => {
+    const value = e.target.value;
+    if (value === "" || /^[0-9]*$/.test(value)) {
+      setBankroll(value);
+    }
+  };
 
   return (
     <div className="frame2" style={{ marginTop: "-60px" }}>
       <div className="rectangle4"></div>
-      {/* Pass the bankroll value to Frame3 using the state prop */}
-      <Link className="buttonNext" to="/frame3" state={{ bankroll }}>
+      {/* Convert bankroll to a number when passing to Frame3 */}
+      <Link className="buttonNext" to="/frame3" state={{ bankroll: Number(bankroll) }}>
         Next
       </Link>
       <div className="rectangle3"></div>
@@ -19,7 +27,7 @@ const Frame2 = () => {
         className="inputBankroll"
         type="number"
         value={bankroll}
-        onChange={(e) => setBankroll(Number(e.target.value))}
+        onChange={handleChange}
       />
       <div className="dollarsign">$</div>
     </div>
